@@ -17,9 +17,9 @@ public class App {
             while (PlayingGame){
                 System.out.println("Good morning student.  Time to get to school.");
                 System.out.println("Your alarm has just gone off.  Do you: get up or press alarm?");
-
+                Game newGame = new Game("a");
                 String playerChoice = bufferedReader.readLine();
-
+                newGame.startUp();
             }
 
 

@@ -18,13 +18,13 @@ public class GameTest {
     @Test
     public void runGame_getsInput_get_up() {
         Game testGame = new Game("get up");
-        assertEquals("get up", testGame.getInput());
+        assertEquals(null, testGame.getInput());
     }
-//    @Test
-//    public void runGame_playingGame(){
-//        Game testGame = new Game("true");
-//        assertEquals(true, testGame.playingGameTest());
-//    }
+   @Test
+    public void runGame_startGame_bye() {
+        Game testGame = new Game();
+        assertEquals("bye", testGame.startUp());
+   }
 }
 
 
