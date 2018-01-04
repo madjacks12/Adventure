@@ -7,10 +7,15 @@ package models;
 public class Game {
     private String output;
 
-  public Game() {
-        this.output = "a";
+  public Game(String test) {
+        this.output = test;
     }
     public String getOutput(){
       return output;
     }
+    public Integer speedHurry(Integer speed){
+        Integer speed = 5;
+        Integer speedHurry = 2 * speed;
+    }
+
 }
