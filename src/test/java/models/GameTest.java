@@ -6,7 +6,7 @@ public class GameTest {
 
     @Test
     public void runGame_instanceWorks() {
-        Game testGame = new Game();
+        Game testGame = new Game("a");
         assertEquals(true, testGame instanceof Game);
     }
 
@@ -15,6 +15,7 @@ public class GameTest {
         Game testGame = new Game("a");
         assertEquals("a", testGame.getOutput());
     }
+
 //    @Test
 //    public void runGame_playingGame(){
 //        Game testGame = new Game("true");
