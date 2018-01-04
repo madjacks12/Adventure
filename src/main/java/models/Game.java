@@ -4,7 +4,7 @@ package models;
 public class Game {
     private String output;
     public boolean playingGame = true;
-    public String input = " ";
+    public String input = "get up";
     public String playerChoiceOne = input;
     public String [] startGame = {"Yes", "No"};
     public String [] choiceOne = {"get up", "press alarm"};
@@ -14,6 +14,9 @@ public class Game {
     }
     public String getOutput() {
         return output;
+    }
+    public String getInput() {
+        return input;
     }
 }
 
