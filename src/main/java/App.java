@@ -18,12 +18,13 @@ public class App {
         Game answerFour = new Game("The sun is and so are you.");
         Game answerFive = new Game("The sun is and so are you.");
 
+        System.out.println("Good morning student.  Time to get to school.");
+        System.out.println("Your alarm has just gone off.  Do you: get up or press alarm?");
 
         while (playingGame) {
 
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-            System.out.println("Good morning student.  Time to get to school.");
-            System.out.println("Your alarm has just gone off.  Do you: get up or press alarm?");
+
 
 
             try {
@@ -31,8 +32,8 @@ public class App {
 
                 if (playerChoice.equals("get up")) {
                     System.out.print(answerOne.getAnswerOne());
-                } else if (playerChoice.equals("press alarm")) {
-                    System.out.print(answerTwo.getAnswerOne());
+                } else if (playerChoice.equals("get dressed")) {
+                    System.out.print(answerThree.getAnswerOne());
                 } else {
                     System.out.print("figure it out!");
                 }
