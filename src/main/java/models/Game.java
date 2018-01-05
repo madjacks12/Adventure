@@ -2,40 +2,64 @@ package models;
 
 
 public class Game {
-    private String output;
-    public boolean PlayingGame = true;
-    public String input = null;
-    //    public String playerChoiceOne = input;
-    public String[] startGame = {"Yes", "No"};
-    public String[] choiceOne = {"get up", "press alarm"};
-    public String playerChoice = input;
+    public String answerOne;
+//    public String answerTwo;
+//    public String answerThree;
+//    public String answerFour;
+//    public String answerFive;
+//    public String answerSix;
 
-    public Game(String output) {
-        this.output = "a";
-        //this.input = playerChoice;
-    }
+
+    public String output;
+    public Integer input;
+    public String[] choiceOne = {"get up", "press alarm"};
 
     public String getOutput() {
         return output;
     }
 
-    public String getInput() {
+    public Integer getInput() {
         return input;
     }
 
-    public String startUp() {
-        for (Integer i = 0; i < startGame.length; i++) {
-            if (input.equals(startGame[0])) {
-                return "Let's Start";
-            } else if (input.equals(startGame[1])) {
-                return "Bye.";
-//                playingGame = false;
-            } else {
-                return "Please enter Yes or No.";
+    public Game(String answerOne) {
+        this.answerOne = answerOne;
+//        this.answerTwo = answerTwo;
+//        this.answerThree = answerThree;
+//        this.answerFour = answerFour;
+//        this.answerFive = answerFive;
+//        this.answerSix = answerSix;
 
-            }
-        } return "fail";
-//    public String firstDecision() {
+    }
+    public String getAnswerOne() {
+        return answerOne;
+    }
+//    public String getAnswerTwo() {
+//        return answerTwo;
+//    }
+//    public String getAnswerThree() {
+//        return answerThree;
+//    }
+//    public String getAnswerFour() {
+//        return answerFour;
+//    }
+//    public String getAnswerFive() {
+//        return answerFive;
+//    }
+//    public String getAnswerSix() {
+//        return answerSix;
+//    }
+
+//    public String startUp(String input){
+//            if (input.equals("Let's Start")) {
+//                return "Let's Start";
+//            } else if (input.equals("Bye.")) {
+//                return "Bye.";
+////                playingGame = false;
+//            } else {
+//                return "Please enter Yes or No.";
+//            }
+////    public String firstDecision() {
 //      for (Integer i = 0; i < choiceOne.length; i++) {
 //          if (input.equals(choiceOne[0])) {
 //              return "The sun is and so are you.";
@@ -47,5 +71,4 @@ public class Game {
 //      }
 //        this.output = test;
 //    }
-    }
 }
